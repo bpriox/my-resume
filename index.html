@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BPRIOX</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&family=Vazirmatn:wght@400;500;700;800&family=Dancing+Script:wght@600&display=swap" />
+
+  <!-- Styles (order matters: later files can override earlier ones) -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/universe.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/philosophy.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/gift-dialog.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="#home" aria-label="BPRIOX">
+        <svg viewBox="0 0 68 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="inf" x1="0" x2="1">
+              <stop offset="0" stop-color="#EC4899" />
+              <stop offset=".5" stop-color="#8B5CF6" />
+              <stop offset="1" stop-color="#38BDF8" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M34 20C26 8 8 8 8 20c0 12 18 12 26 0 8-12 26-12 26 0 0 12-18 12-26 0z"
+            fill="none"
+            stroke="url(#inf)"
+            stroke-width="5"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span><b>Bpriox</b><small>Dream · Code · Love</small></span>
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li>
+            <a href="#home" data-nav="home"
+              ><i data-i="home"></i><span data-fa="خانه">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" data-nav="about" data-fa-wrap
+              ><span data-fa="درباره">About</span></a
+            >
+          </li>
+          <li>
+            <a href="#universe" data-nav="universe"
+              ><span data-fa="جهان من">Universe</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects" data-nav="projects"
+              ><span data-fa="پروژه‌ها">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#philosophy" data-nav="philosophy"
+              ><span data-fa="فلسفه">Philosophy</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-nav="contact"
+              ><span data-fa="تماس">Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="lang"
+        id="lang"
+        type="button"
+        aria-label="Switch language to Persian"
+      >
+        FA
+      </button>
+    </div>
+  </header>
+
+  <nav class="dock" aria-label="Quick navigation">
+    <ul>
+      <li>
+        <a href="#home" data-nav="home"
+          ><i data-i="home"></i><span data-fa="خانه">Home</span></a
+        >
+      </li>
+      <li>
+        <a href="#about" data-nav="about"
+          ><i data-i="user"></i><span data-fa="درباره">About</span></a
+        >
+      </li>
+      <li>
+        <a href="#universe" data-nav="universe"
+          ><i data-i="orbit"></i><span data-fa="جهان">Universe</span></a
+        >
+      </li>
+      <li>
+        <a href="#projects" data-nav="projects"
+          ><i data-i="grid"></i><span data-fa="پروژه">Work</span></a
+        >
+      </li>
+      <li>
+        <a href="#contact" data-nav="contact"
+          ><i data-i="mail"></i><span data-fa="تماس">Contact</span></a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="h-hero">
+      <canvas class="sky" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-fa="توسعه‌دهنده خلاق · کاشف دیجیتال"
+              >Creative developer · Digital explorer</span
+            >
+            <h1 id="h-hero">
+              <span class="line"
+                ><span class="li" data-fa="سلام،">Hey there,</span></span
+              >
+              <span class="line"
+                ><span class="li"
+                  ><span data-fa="من">I’m</span>
+                  <em class="grad" style="font-style: normal">Bpriox</em></span
+                ></span
+              >
+            </h1>
+            <p
+              class="sub"
+              data-fa="توسعه‌دهنده، رؤیاپرداز و سازنده‌ای جاه‌طلب که به فردایی زیبا ایمان دارد."
+            >
+              A developer, dreamer and ambitious builder who believes in a
+              beautiful tomorrow.
+            </p>
+            <p class="script">
+              <span data-fa="مخصوصاً با تو">Especially with you</span
+              ><i data-i="heart"></i>
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="#universe"
+                ><i data-i="rocket"></i
+                ><span data-fa="دنیای من را ببین">Explore my world</span></a
+              >
+              <button class="btn" id="giftBtn" type="button">
+                <i data-i="gift"></i
+                ><span data-fa="یک هدیه ویژه">A special gift</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="scene-wrap">
+            <svg
+              class="scene"
+              viewBox="0 0 640 600"
+              role="img"
+              aria-label="Two silhouettes sitting on a rock, looking at a huge moon ringed by a neon heart, with a cat beside them"
+            >
+              <defs>
+                <radialGradient id="moon" cx="38%" cy="32%" r="78%">
+                  <stop offset="0" stop-color="#f4eeff" />
+                  <stop offset=".5" stop-color="#b3a4e0" />
+                  <stop offset="1" stop-color="#4b3b8a" />
+                </radialGradient>
+                <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#EC4899" stop-opacity=".5" />
+                  <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".25" />
+                  <stop offset="1" stop-color="#8B5CF6" stop-opacity="0" />
+                </radialGradient>
+                <linearGradient id="ring" x1="0" x2="1">
+                  <stop offset="0" stop-color="#EC4899" />
+                  <stop offset=".6" stop-color="#8B5CF6" />
+                  <stop offset="1" stop-color="#38BDF8" />
+                </linearGradient>
+                <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1a0f33" />
+                  <stop offset="1" stop-color="#0a0616" />
+                </linearGradient>
+                <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="5" result="b" />
+                  <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <g class="layer l-moon" data-depth="10">
+                <circle
+                  class="halo"
+                  cx="350"
+                  cy="215"
+                  r="250"
+                  fill="url(#halo)"
+                />
+                <circle cx="350" cy="215" r="152" fill="url(#moon)" />
+                <g fill="#4b3b8a" opacity=".35">
+                  <circle cx="300" cy="170" r="26" />
+                  <circle cx="395" cy="250" r="34" />
+                  <circle cx="330" cy="285" r="15" />
+                  <circle cx="410" cy="160" r="12" />
+                  <circle cx="285" cy="235" r="9" />
+                </g>
+              </g>
+              <g class="layer l-ring" data-depth="18">
+                <ellipse
+                  class="ringline"
+                  cx="350"
+                  cy="232"
+                  rx="262"
+                  ry="64"
+                  transform="rotate(-18 350 232)"
+                  fill="none"
+                  stroke="url(#ring)"
+                  stroke-width="3"
+                  filter="url(#glow)"
+                />
+                <g
+                  class="neon"
+                  transform="translate(468 150) scale(1.35)"
+                  filter="url(#glow)"
+                >
+                  <path
+                    d="M0 34C-56 -4 -50 -50 -22 -50 -9 -50 0 -41 0 -34 0 -41 9 -50 22 -50 50 -50 56 -4 0 34Z"
+                    fill="none"
+                    stroke="#EC4899"
+                    stroke-width="3.4"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </g>
+              <g class="layer l-rock" data-depth="6">
+                <path
+                  d="M0 600V478C60 448 120 462 190 446C260 430 330 408 420 414C500 418 570 440 640 428V600Z"
+                  fill="url(#rock)"
+                />
+                <path
+                  d="M0 478C60 448 120 462 190 446C260 430 330 408 420 414C500 418 570 440 640 428"
+                  fill="none"
+                  stroke="#8B5CF6"
+                  stroke-opacity=".55"
+                  stroke-width="1.5"
+                />
+                <g
+                  transform="translate(376 332)"
+                  fill="#0f0820"
+                  stroke="#a78bfa"
+                  stroke-opacity=".5"
+                  stroke-width="1.5"
+                >
+                  <path d="M-40 84C-42 32 -30 2 0 2 30 2 44 32 42 84Z" />
+                  <circle cx="0" cy="-24" r="19" />
+                  <path d="M20 84C22 34 40 18 62 22 80 28 86 52 84 84Z" />
+                  <circle cx="48" cy="-8" r="17" />
+                  <path
+                    d="M30 -24C20 -8 24 32 36 48H68C72 22 68 -14 48 -28 42 -32 34 -30 30 -24Z"
+                  />
+                  <path
+                    d="M-14 40c-8-9-20-9-20 0s12 9 20 0 22-9 22 0-14 9-22 0z"
+                    fill="none"
+                    stroke="#EC4899"
+                    stroke-width="2.2"
+                    transform="translate(0 4) scale(.8)"
+                    filter="url(#glow)"
+                  />
+                </g>
+                <g
+                  transform="translate(560 392)"
+                  fill="#0f0820"
+                  stroke="#a78bfa"
+                  stroke-opacity=".5"
+                  stroke-width="1.5"
+                >
+                  <path d="M-20 38C-24 8 -12 -6 2 -6 18 -6 26 8 22 38Z" />
+                  <circle cx="2" cy="-18" r="12" />
+                  <path d="M-8 -26L-10 -42 2 -32zM12 -26L16 -42 2 -32z" />
+                  <path
+                    d="M22 34C44 34 50 12 40 2"
+                    fill="none"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="-2" cy="-18" r="2.2" fill="#38BDF8" stroke="none" />
+                  <circle cx="7" cy="-18" r="2.2" fill="#38BDF8" stroke="none" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <a class="cue" href="#about" aria-label="Scroll to About"
+        ><span class="mouse"></span
+        ><span data-fa="برای کشف پایین بروید">Scroll to discover</span></a
+      >
+    </section>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about" aria-labelledby="h-about">
+      <div class="wrap">
+        <div class="panel" data-reveal>
+          <div>
+            <span class="eyebrow" data-fa="درباره من">About me</span>
+            <h2 id="h-about" data-split data-fa="سفری از کد، رؤیا و عشق.">
+              A journey of code, dreams and love.
+            </h2>
+            <p
+              data-fa="من Bpriox هستم؛ توسعه‌دهنده‌ای خلاق و کاشف دنیای دیجیتال. تجربه‌هایی وب می‌سازم که زنده به نظر برسند، دنبال ایده‌های بلندپروازانه می‌روم و در چیزهای کوچک شادی پیدا می‌کنم."
+            >
+              I’m Bpriox, a creative developer and digital explorer. I build web
+              experiences that feel alive, chase ambitious ideas and keep finding
+              joy in small things.
+            </p>
+            <ul class="chips">
+              <li class="chip">
+                <i data-i="code"></i
+                ><span data-fa="توسعه وب">Web development</span>
+              </li>
+              <li class="chip">
+                <i data-i="cube"></i
+                ><span data-fa="سه‌بعدی و انیمیشن">3D &amp; animation</span>
+              </li>
+              <li class="chip">
+                <i data-i="palette"></i
+                ><span data-fa="طراحی خلاق">Creative design</span>
+              </li>
+              <li class="chip">
+                <i data-i="sparkles"></i
+                ><span data-fa="همیشه در حال یادگیری">Always learning</span>
+              </li>
+            </ul>
+            <a class="btn" href="#universe"
+              ><span data-fa="جهان من را ببین">See my universe</span
+              ><i data-i="arrow" class="flip"></i
+            ></a>
+          </div>
+          <div class="desk-wrap">
+            <svg
+              class="desk"
+              id="desk"
+              viewBox="0 0 640 400"
+              role="img"
+              aria-label="A futuristic desk with three monitors showing code and a galaxy, a neon sign reading Dream Bigger, a glowing orb, plants and headphones"
+            >
+              <defs>
+                <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1c1038" />
+                  <stop offset="1" stop-color="#0b0718" />
+                </linearGradient>
+                <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1">
+                  <stop
+                    offset="0"
+                    style="stop-color: var(--s1)"
+                    stop-opacity=".55"
+                  />
+                  <stop
+                    offset="1"
+                    style="stop-color: var(--s2)"
+                    stop-opacity=".35"
+                  />
+                </linearGradient>
+                <radialGradient id="gal" cx="50%" cy="55%" r="55%">
+                  <stop offset="0" stop-color="#fff" />
+                  <stop offset=".12" style="stop-color: var(--s2)" />
+                  <stop
+                    offset=".5"
+                    style="stop-color: var(--s1)"
+                    stop-opacity=".8"
+                  />
+                  <stop offset="1" stop-color="#0b0718" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="orbg" cx="40%" cy="35%" r="70%">
+                  <stop offset="0" stop-color="#ffe3b3" />
+                  <stop offset=".6" stop-color="#f59e0b" />
+                  <stop offset="1" stop-color="#b45309" />
+                </radialGradient>
+                <filter id="g2" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="4" result="b" />
+                  <feMerge>
+                    <feMergeNode in="b" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <rect width="640" height="400" fill="url(#wall)" />
+              <g fill="#2a1850">
+                <rect x="24" y="48" width="12" height="62" rx="2" />
+                <rect x="38" y="40" width="10" height="70" rx="2" />
+                <rect x="50" y="52" width="14" height="58" rx="2" />
+                <rect x="24" y="108" width="150" height="5" rx="2" />
+              </g>
+              <rect
+                x="478"
+                y="22"
+                width="146"
+                height="104"
+                rx="14"
+                fill="none"
+                stroke="#EC4899"
+                stroke-width="3"
+                filter="url(#g2)"
+              />
+              <text
+                x="551"
+                y="68"
+                text-anchor="middle"
+                font-family="Dancing Script, cursive"
+                font-size="34"
+                fill="#f9a8d4"
+                filter="url(#g2)"
+              >
+                Dream
+              </text>
+              <text
+                x="551"
+                y="104"
+                text-anchor="middle"
+                font-family="Dancing Script, cursive"
+                font-size="34"
+                fill="#f9a8d4"
+                filter="url(#g2)"
+              >
+                Bigger
+              </text>
+              <!-- monitors -->
+              <g class="mon">
+                <rect
+                  x="64"
+                  y="138"
+                  width="130"
+                  height="98"
+                  rx="6"
+                  fill="#0b0718"
+                  stroke="#6d4fd0"
+                  stroke-width="2"
+                />
+                <rect
+                  x="68"
+                  y="142"
+                  width="122"
+                  height="90"
+                  rx="3"
+                  fill="url(#scr)"
+                />
+                <g data-lines="68,142,122,90"></g>
+              </g>
+              <g class="mon">
+                <rect
+                  x="206"
+                  y="104"
+                  width="226"
+                  height="138"
+                  rx="8"
+                  fill="#0b0718"
+                  stroke="#8B5CF6"
+                  stroke-width="2.5"
+                  filter="url(#g2)"
+                />
+                <rect
+                  x="211"
+                  y="109"
+                  width="216"
+                  height="128"
+                  rx="4"
+                  fill="#0b0718"
+                />
+                <ellipse
+                  cx="319"
+                  cy="174"
+                  rx="92"
+                  ry="38"
+                  fill="url(#gal)"
+                  transform="rotate(-18 319 174)"
+                />
+                <circle cx="319" cy="174" r="5" fill="#fff" />
+              </g>
+              <g class="mon">
+                <rect
+                  x="444"
+                  y="142"
+                  width="104"
+                  height="94"
+                  rx="6"
+                  fill="#0b0718"
+                  stroke="#6d4fd0"
+                  stroke-width="2"
+                />
+                <rect
+                  x="448"
+                  y="146"
+                  width="96"
+                  height="86"
+                  rx="3"
+                  fill="url(#scr)"
+                />
+                <g data-lines="448,146,96,86"></g>
+              </g>
+              <g fill="#2a1850">
+                <rect x="304" y="242" width="30" height="26" />
+                <rect x="278" y="266" width="82" height="6" rx="3" />
+                <rect x="118" y="236" width="22" height="30" />
+                <rect x="494" y="236" width="22" height="30" />
+              </g>
+              <!-- desk -->
+              <rect x="0" y="274" width="640" height="18" fill="#4a2a66" />
+              <rect x="0" y="292" width="640" height="108" fill="#150b2a" />
+              <rect
+                x="0"
+                y="274"
+                width="640"
+                height="2"
+                fill="#EC4899"
+                opacity=".6"
+              />
+              <rect
+                x="222"
+                y="278"
+                width="150"
+                height="9"
+                rx="4"
+                fill="#1d1438"
+                stroke="#38BDF8"
+                stroke-opacity=".7"
+              />
+              <rect
+                x="392"
+                y="279"
+                width="16"
+                height="8"
+                rx="4"
+                fill="#1d1438"
+                stroke="#EC4899"
+                stroke-opacity=".7"
+              />
+              <!-- headphones -->
+              <path
+                d="M60 268c0-34 44-34 44 0"
+                fill="none"
+                stroke="#6d4fd0"
+                stroke-width="5"
+              />
+              <rect x="52" y="256" width="14" height="20" rx="6" fill="#2a1850" />
+              <rect x="98" y="256" width="14" height="20" rx="6" fill="#2a1850" />
+              <!-- plant -->
+              <g transform="translate(20 300)">
+                <rect x="0" y="40" width="44" height="50" rx="6" fill="#2a1850" />
+                <path
+                  d="M22 40C4 24 4 6 18 -6 16 12 22 24 22 40zM22 40C40 26 46 8 34 -4 32 14 24 26 22 40z"
+                  fill="#2f8a6e"
+                  opacity=".85"
+                />
+              </g>
+              <!-- orb (interactive) -->
+              <g
+                class="orb"
+                id="orb"
+                role="button"
+                tabindex="0"
+                aria-label="Change the room's glow"
+              >
+                <circle
+                  cx="590"
+                  cy="248"
+                  r="26"
+                  fill="url(#orbg)"
+                  filter="url(#g2)"
+                />
+                <rect
+                  x="574"
+                  y="272"
+                  width="32"
+                  height="8"
+                  rx="3"
+                  fill="#2a1850"
+                />
+              </g>
+              <!-- chair -->
+              <path
+                d="M470 400c-8-60-6-120 24-136 28-14 50 4 50 38l12 98z"
+                fill="#1a0f33"
+                stroke="#8B5CF6"
+                stroke-opacity=".5"
+                stroke-width="2"
+              />
+              <path
+                d="M498 330c-6-8-16-8-16 0s10 8 16 0 16-8 16 0-10 8-16 0z"
+                fill="none"
+                stroke="#EC4899"
+                stroke-width="2.4"
+                filter="url(#g2)"
+              />
+            </svg>
+            <p class="hint" data-fa="گوی درخشان را لمس کن تا رنگ اتاق عوض شود.">
+              Tap the glowing orb to change the room’s light.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- UNIVERSE -->
+    <section class="sec" id="universe" aria-labelledby="h-uni">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow" data-fa="مهارت‌ها و علاقه‌ها"
+            >Skills &amp; interests</span
+          >
+          <h2 id="h-uni" data-split data-fa="جهان من">My universe</h2>
+          <p class="lead" data-fa="چیزهایی که هر روز دورشان می‌چرخم.">
+            The things I orbit every day.
+          </p>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="code"></i></div>
+              <h3 data-fa="توسعه وب">Web development</h3>
+              <p
+                data-fa="رابط‌های سریع و در دسترس با HTML معنادار، CSS مدرن و جاوااسکریپت."
+              >
+                Fast, accessible interfaces built with semantic HTML, modern CSS
+                and JavaScript.
+              </p>
+              <ul class="tags">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">React</li>
+              </ul>
+            </article>
+          </li>
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="sparkles"></i></div>
+              <h3 data-fa="کدنویسی خلاق">Creative coding</h3>
+              <p
+                data-fa="کنوس، شیدر و حرکت مولد که ریاضی را به حال‌وهوا تبدیل می‌کنند."
+              >
+                Canvas, shaders and generative motion that turn math into
+                atmosphere.
+              </p>
+              <ul class="tags">
+                <li class="tag">Canvas</li>
+                <li class="tag">GSAP</li>
+                <li class="tag">WebGL</li>
+              </ul>
+            </article>
+          </li>
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="palette"></i></div>
+              <h3 data-fa="طراحی UI/UX">UI/UX design</h3>
+              <p
+                data-fa="سلسله‌مراتب روشن، تایپوگرافی صادقانه و چیدمانی که چشم را هدایت می‌کند."
+              >
+                Clear hierarchy, honest typography and layouts that guide the eye.
+              </p>
+              <ul class="tags">
+                <li class="tag">Figma</li>
+                <li class="tag">Typography</li>
+                <li class="tag">Systems</li>
+              </ul>
+            </article>
+          </li>
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="cube"></i></div>
+              <h3 data-fa="انیمیشن سه‌بعدی">3D animation</h3>
+              <p
+                data-fa="دنیاهای کوچک در حرکت: معرفی محصول، ویدیوی آموزشی و لوپ‌های سینمایی."
+              >
+                Small worlds in motion: product reveals, explainers and cinematic
+                loops.
+              </p>
+              <ul class="tags">
+                <li class="tag">Blender</li>
+                <li class="tag">Motion</li>
+                <li class="tag">Rendering</li>
+              </ul>
+            </article>
+          </li>
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="chip"></i></div>
+              <h3 data-fa="هوش مصنوعی">Artificial intelligence</h3>
+              <p
+                data-fa="استفاده از هوش مصنوعی به‌عنوان همکار خلاق برای ایده، نمونه‌سازی و خودکارسازی."
+              >
+                Using AI as a creative partner for ideas, prototypes and
+                automation.
+              </p>
+              <ul class="tags">
+                <li class="tag">Python</li>
+                <li class="tag">Prompting</li>
+                <li class="tag">Automation</li>
+              </ul>
+            </article>
+          </li>
+          <li class="card">
+            <article class="tilt">
+              <div class="cico"><i data-i="orbit"></i></div>
+              <h3 data-fa="تجربه‌های دیجیتال">Digital experiences</h3>
+              <p
+                data-fa="هدیه‌ها، داستان‌ها و صفحه‌های تعاملی که باید حس شوند، نه فقط دیده."
+              >
+                Gifts, stories and interactive pages made to be felt, not just
+                viewed.
+              </p>
+              <ul class="tags">
+                <li class="tag">Storytelling</li>
+                <li class="tag">Interaction</li>
+                <li class="tag">Detail</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+        <ul class="stack" aria-label="Tools">
+          <li style="--c: #f97316"><i></i>HTML</li>
+          <li style="--c: #38bdf8"><i></i>CSS</li>
+          <li style="--c: #facc15"><i></i>JavaScript</li>
+          <li style="--c: #22d3ee"><i></i>React</li>
+          <li style="--c: #4ade80"><i></i>Node.js</li>
+          <li style="--c: #f5f3ff"><i></i>GitHub</li>
+          <li style="--c: #8b5cf6"><i></i>Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- PROJECTS -->
+    <section class="sec" id="projects" aria-labelledby="h-proj">
+      <div class="wrap rail-bar">
+        <div class="sec-head">
+          <span class="eyebrow" data-fa="کارهای منتخب">Selected work</span>
+          <h2 id="h-proj" data-split data-fa="ایده‌هایی که زنده می‌شوند.">
+            Ideas that come to life.
+          </h2>
+        </div>
+        <div class="arrows">
+          <button
+            class="arrow"
+            id="prev"
+            type="button"
+            aria-label="Scroll projects left"
+          >
+            <i data-i="arrowL"></i>
+          </button>
+          <button
+            class="arrow"
+            id="next"
+            type="button"
+            aria-label="Scroll projects right"
+          >
+            <i data-i="arrow"></i>
+          </button>
+        </div>
+      </div>
+      <ul class="rail" id="rail" tabindex="0" aria-label="Projects">
+        <li class="card">
+          <article class="proj tilt-p">
+            <div class="thumb">
+              <svg viewBox="0 0 320 180" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gg" x1="0" x2="1">
+                    <stop offset="0" stop-color="#38BDF8" />
+                    <stop offset="1" stop-color="#EC4899" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="180" fill="#0d0820" />
+                <rect x="0" y="0" width="58" height="180" fill="#150d2c" />
+                <g fill="#8B5CF6" opacity=".7">
+                  <rect x="12" y="16" width="34" height="6" rx="3" />
+                  <rect
+                    x="12"
+                    y="38"
+                    width="28"
+                    height="5"
+                    rx="2.5"
+                    opacity=".5"
+                  />
+                  <rect
+                    x="12"
+                    y="52"
+                    width="32"
+                    height="5"
+                    rx="2.5"
+                    opacity=".5"
+                  />
+                  <rect
+                    x="12"
+                    y="66"
+                    width="24"
+                    height="5"
+                    rx="2.5"
+                    opacity=".5"
+                  />
+                </g>
+                <g>
+                  <rect
+                    x="70"
+                    y="14"
+                    width="76"
+                    height="40"
+                    rx="9"
+                    fill="#ffffff12"
+                    stroke="#ffffff22"
+                  />
+                  <rect
+                    x="154"
+                    y="14"
+                    width="76"
+                    height="40"
+                    rx="9"
+                    fill="#ffffff12"
+                    stroke="#ffffff22"
+                  />
+                  <rect
+                    x="238"
+                    y="14"
+                    width="74"
+                    height="40"
+                    rx="9"
+                    fill="#ffffff12"
+                    stroke="#ffffff22"
+                  />
+                </g>
+                <g fill="#F5F3FF" opacity=".8">
+                  <rect x="80" y="24" width="30" height="6" rx="3" />
+                  <rect x="164" y="24" width="38" height="6" rx="3" />
+                  <rect x="248" y="24" width="26" height="6" rx="3" />
+                </g>
+                <rect
+                  x="70"
+                  y="64"
+                  width="242"
+                  height="70"
+                  rx="10"
+                  fill="#ffffff0d"
+                  stroke="#ffffff1c"
+                />
+                <polyline
+                  points="80,122 112,100 142,110 176,84 210,96 246,76 300,90"
+                  fill="none"
+                  stroke="url(#gg)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <g fill="#ffffff22">
+                  <rect x="70" y="144" width="242" height="8" rx="4" />
+                  <rect x="70" y="158" width="190" height="8" rx="4" />
+                </g>
+              </svg>
+            </div>
+            <div class="proj-body">
+              <span class="kind" data-fa="پنل ادمین">UI admin panel</span>
+              <h3>Glass Gate</h3>
+              <p data-fa="داشبوردی شیشه‌ای با نمای داده‌های آرام و کنش‌های سریع.">
+                A glassmorphism admin dashboard with calm data views and quick
+                actions.
+              </p>
+              <ul class="tags">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JS</li>
+              </ul>
+            </div>
+            <a class="go" href="#projects" aria-label="Open Glass Gate"
+              ><i
+                data-i="arrow"
+                class="flip"
+                style="transform: rotate(-45deg)"
+              ></i
+            ></a>
+          </article>
+        </li>
+        <li class="card">
+          <article class="proj tilt-p">
+            <div class="thumb">
+              <svg viewBox="0 0 320 180" aria-hidden="true">
+                <defs>
+                  <radialGradient id="bm" cx="40%" cy="35%" r="75%">
+                    <stop offset="0" stop-color="#f4eeff" />
+                    <stop offset="1" stop-color="#6d58b8" />
+                  </radialGradient>
+                  <linearGradient id="bs" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#1a0f38" />
+                    <stop offset="1" stop-color="#3b1a5e" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="180" fill="url(#bs)" />
+                <g fill="#fff">
+                  <circle cx="30" cy="30" r="1.2" />
+                  <circle cx="82" cy="18" r="1" />
+                  <circle cx="130" cy="46" r="1.4" />
+                  <circle cx="268" cy="24" r="1.2" />
+                  <circle cx="296" cy="64" r="1" />
+                  <circle cx="52" cy="82" r="1" />
+                </g>
+                <circle cx="170" cy="76" r="48" fill="url(#bm)" />
+                <ellipse
+                  cx="170"
+                  cy="84"
+                  rx="84"
+                  ry="20"
+                  transform="rotate(-16 170 84)"
+                  fill="none"
+                  stroke="#EC4899"
+                  stroke-width="2"
+                />
+                <path
+                  d="M232 52c-14-10-24 4-14 14l14 12 14-12c10-10 0-24-14-14z"
+                  fill="none"
+                  stroke="#EC4899"
+                  stroke-width="2"
+                />
+                <path
+                  d="M0 180V138C60 120 120 132 190 128 250 124 290 134 320 130V180Z"
+                  fill="#0d0820"
+                />
+                <circle
+                  cx="160"
+                  cy="124"
+                  r="6"
+                  fill="#0d0820"
+                  stroke="#a78bfa"
+                  stroke-opacity=".5"
+                />
+                <path
+                  d="M150 140c0-12 4-16 10-16s12 6 12 16z"
+                  fill="#0d0820"
+                  stroke="#a78bfa"
+                  stroke-opacity=".5"
+                />
+                <circle
+                  cx="172"
+                  cy="126"
+                  r="5"
+                  fill="#0d0820"
+                  stroke="#a78bfa"
+                  stroke-opacity=".5"
+                />
+              </svg>
+            </div>
+            <div class="proj-body">
+              <span class="kind" data-fa="یک غافلگیری ویژه"
+                >A special surprise</span
+              >
+              <h3>LiLi Birthday Surprise</h3>
+              <p
+                data-fa="صفحه‌ای تعاملی برای تولد، ساخته‌شده مثل یک نامه عاشقانه زیر آسمان شب."
+              >
+                An interactive birthday page built as a night-sky love letter.
+              </p>
+              <ul class="tags">
+                <li class="tag">GSAP</li>
+                <li class="tag">Canvas</li>
+                <li class="tag">Story</li>
+              </ul>
+            </div>
+            <a
+              class="go"
+              href="#projects"
+              aria-label="Open LiLi Birthday Surprise"
+              ><i
+                data-i="arrow"
+                class="flip"
+                style="transform: rotate(-45deg)"
+              ></i
+            ></a>
+          </article>
+        </li>
+        <li class="card">
+          <article class="proj tilt-p">
+            <div class="thumb">
+              <svg viewBox="0 0 320 180" aria-hidden="true">
+                <defs>
+                  <linearGradient id="ab" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0c2140" />
+                    <stop offset="1" stop-color="#0a0618" />
+                  </linearGradient>
+                  <linearGradient id="car" x1="0" x2="1">
+                    <stop offset="0" stop-color="#ef4444" />
+                    <stop offset="1" stop-color="#be185d" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="180" fill="url(#ab)" />
+                <g stroke="#38BDF8" stroke-opacity=".25">
+                  <path d="M0 130H320M0 146H320M0 164H320" />
+                  <path
+                    d="M160 112L40 180M160 112L100 180M160 112L160 180M160 112L220 180M160 112L280 180"
+                  />
+                </g>
+                <path
+                  d="M36 118L66 92C100 70 160 66 204 74L236 86C262 94 284 108 290 122V130H36Z"
+                  fill="url(#car)"
+                />
+                <path
+                  d="M82 92C110 76 160 74 196 80L214 92H90Z"
+                  fill="#0b1b33"
+                  opacity=".85"
+                />
+                <circle
+                  cx="92"
+                  cy="130"
+                  r="20"
+                  fill="#0a0618"
+                  stroke="#38BDF8"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="92"
+                  cy="130"
+                  r="8"
+                  fill="none"
+                  stroke="#38BDF8"
+                  stroke-width="2"
+                />
+                <path
+                  d="M80 114a20 20 0 0 1 24 0"
+                  stroke="#EC4899"
+                  stroke-width="5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="236"
+                  cy="130"
+                  r="20"
+                  fill="#0a0618"
+                  stroke="#38BDF8"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="236"
+                  cy="130"
+                  r="8"
+                  fill="none"
+                  stroke="#38BDF8"
+                  stroke-width="2"
+                />
+                <polyline
+                  points="20,28 52,28 60,12 70,44 80,16 90,40 100,28 140,28"
+                  fill="none"
+                  stroke="#38BDF8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="proj-body">
+              <span class="kind" data-fa="ویدیوی آموزشی">Educational video</span>
+              <h3>ABS Brake Animation</h3>
+              <p
+                data-fa="انیمیشن سه‌بعدی که نشان می‌دهد ترمز ضدقفل چطور فرمان‌پذیری خودرو را حفظ می‌کند."
+              >
+                A 3D explainer showing how anti-lock braking keeps a car
+                steerable.
+              </p>
+              <ul class="tags">
+                <li class="tag">Blender</li>
+                <li class="tag">Motion</li>
+              </ul>
+            </div>
+            <a class="go" href="#projects" aria-label="Open ABS Brake Animation"
+              ><i
+                data-i="arrow"
+                class="flip"
+                style="transform: rotate(-45deg)"
+              ></i
+            ></a>
+          </article>
+        </li>
+        <li class="card">
+          <article class="proj ghost">
+            <i data-i="sparkles"></i>
+            <h3 data-fa="مدار بعدی">Next orbit</h3>
+            <p data-fa="پروژه بعدی اینجا قرار می‌گیرد.">
+              The next project goes here.
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- PHILOSOPHY -->
+    <section class="sec" id="philosophy" aria-labelledby="h-phil">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="eyebrow" data-fa="فلسفه من">My philosophy</span>
+          <h2 id="h-phil" class="sr-only" data-fa="فلسفه من">My philosophy</h2>
+        </div>
+        <ul class="creed">
+          <li>
+            <span class="big" data-text="Consistency" data-fa="پایداری"
+              >Consistency</span
+            >
+            <p data-fa="قدم‌های کوچک، هر روز، تا وقتی که به یک جاده تبدیل شوند.">
+              Small steps, every day, until they become a road.
+            </p>
+          </li>
+          <li>
+            <span class="big" data-text="Ambition" data-fa="جاه‌طلبی"
+              >Ambition</span
+            >
+            <p data-fa="فراتر از راحتی هدف بگیر، بعد نردبانش را بساز.">
+              Aim past what feels comfortable, then build the ladder.
+            </p>
+          </li>
+          <li>
+            <span class="big" data-text="Independence" data-fa="استقلال"
+              >Independence</span
+            >
+            <p
+              data-fa="تنها ساختن را یاد بگیر تا بتوانی انتخاب کنی با چه کسی بسازی."
+            >
+              Learn to build alone, so you can choose who to build with.
+            </p>
+          </li>
+          <li>
+            <span class="big" data-text="Creativity" data-fa="خلاقیت"
+              >Creativity</span
+            >
+            <p data-fa="چیزی را بساز که هنوز وجود ندارد.">
+              Make the thing that doesn’t exist yet.
+            </p>
+          </li>
+          <li>
+            <span class="big" data-text="Growth" data-fa="رشد">Growth</span>
+            <p data-fa="هر پروژه مرا کمی متفاوت‌تر از قبل رها می‌کند.">
+              Every project leaves me a little different than it found me.
+            </p>
+          </li>
+        </ul>
+        <p class="quote" data-reveal>
+          <span
+            data-fa="بعضی آدم‌ها مثل ستاره‌اند؛ شاید همیشه نبینی‌شان، اما می‌دانی همیشه آن‌جا هستند."
+            >Some people are like stars… you may not always see them, but you know
+            they’re always there.</span
+          ><i data-i="heart"></i>
+        </p>
+      </div>
+    </section>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <!-- CONTACT -->
+    <section class="sec" id="contact" aria-labelledby="h-contact">
+      <div class="wrap contact-grid">
+        <svg
+          class="heart-art"
+          viewBox="0 0 400 360"
+          role="img"
+          aria-label="A glass heart holding a spiral galaxy, ringed by orbiting lines"
+        >
+          <defs>
+            <radialGradient id="hg" cx="50%" cy="45%" r="60%">
+              <stop offset="0" stop-color="#fff" stop-opacity=".9" />
+              <stop offset=".12" stop-color="#38BDF8" />
+              <stop offset=".45" stop-color="#8B5CF6" stop-opacity=".85" />
+              <stop offset="1" stop-color="#EC4899" stop-opacity=".55" />
+            </radialGradient>
+            <linearGradient id="hs" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#EC4899" />
+              <stop offset="1" stop-color="#38BDF8" />
+            </linearGradient>
+            <clipPath id="hc">
+              <path
+                d="M200 310C60 220 40 120 90 80 130 50 180 64 200 105 220 64 270 50 310 80 360 120 340 220 200 310Z"
+              />
+            </clipPath>
+            <filter id="hf" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="6" result="b" />
+              <feMerge>
+                <feMergeNode in="b" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <path
+            d="M200 310C60 220 40 120 90 80 130 50 180 64 200 105 220 64 270 50 310 80 360 120 340 220 200 310Z"
+            fill="url(#hg)"
+            stroke="url(#hs)"
+            stroke-width="3"
+            filter="url(#hf)"
+          />
+          <g clip-path="url(#hc)">
+            <g class="spin">
+              <ellipse
+                cx="200"
+                cy="170"
+                rx="120"
+                ry="34"
+                transform="rotate(-24 200 170)"
+                fill="none"
+                stroke="#fff"
+                stroke-opacity=".55"
+                stroke-width="2"
+              />
+              <ellipse
+                cx="200"
+                cy="170"
+                rx="86"
+                ry="22"
+                transform="rotate(32 200 170)"
+                fill="none"
+                stroke="#fff"
+                stroke-opacity=".4"
+                stroke-width="2"
+              />
+            </g>
+          </g>
+          <g class="spin rev" style="transform-origin: 200px 190px">
+            <ellipse
+              cx="200"
+              cy="190"
+              rx="190"
+              ry="48"
+              transform="rotate(-12 200 190)"
+              fill="none"
+              stroke="url(#hs)"
+              stroke-opacity=".8"
+              stroke-width="2"
+              stroke-dasharray="4 10"
+            />
+          </g>
+          <g fill="#F5F3FF">
+            <circle class="sp" cx="48" cy="60" r="2.4" />
+            <circle class="sp" cx="350" cy="44" r="2" />
+            <circle class="sp" cx="372" cy="230" r="2.6" />
+            <circle class="sp" cx="30" cy="250" r="2" />
+            <circle class="sp" cx="150" cy="26" r="1.8" />
+            <circle class="sp" cx="282" cy="332" r="2.2" />
+            <circle class="sp" cx="90" cy="330" r="1.8" />
+          </g>
+        </svg>
+
+        <div>
+          <span class="eyebrow" data-fa="تماس">Contact</span>
+          <h2
+            class="closing"
+            id="h-contact"
+            data-split
+            data-fa="بیا با هم چیزی شگفت‌انگیز بسازیم."
+          >
+            Let’s create something amazing together.
+          </h2>
+          <ul class="rows">
+            <li>
+              <i data-i="mail"></i>
+              <dl>
+                <dt data-fa="ایمیل">Email</dt>
+                <dd>hello@your-domain.com</dd>
+              </dl>
+              <button
+                class="copy"
+                type="button"
+                data-copy="hello@your-domain.com"
+                aria-label="Copy email"
+              >
+                <i data-i="copy"></i>
+              </button>
+            </li>
+            <li>
+              <i data-i="telegram"></i>
+              <dl>
+                <dt>Telegram</dt>
+                <dd>@your_handle</dd>
+              </dl>
+              <button
+                class="copy"
+                type="button"
+                data-copy="@your_handle"
+                aria-label="Copy Telegram handle"
+              >
+                <i data-i="copy"></i>
+              </button>
+            </li>
+            <li>
+              <i data-i="globe"></i>
+              <dl>
+                <dt data-fa="موقعیت">Based in</dt>
+                <dd data-fa="شهر شما، کشور">Your city, Country</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="social" aria-label="Social links">
+            <li>
+              <a href="https://github.com/" aria-label="GitHub"
+                ><i data-i="github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" aria-label="YouTube"
+                ><i data-i="youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://t.me/" aria-label="Telegram"
+                ><i data-i="telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://example.com/" aria-label="Website"
+                ><i data-i="globe"></i
+              ></a>
+            </li>
+          </ul>
+          <p id="toast" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="#home" aria-label="BPRIOX, back to top">
+        <svg viewBox="0 0 68 40" aria-hidden="true">
+          <path
+            d="M34 20C26 8 8 8 8 20c0 12 18 12 26 0 8-12 26-12 26 0 0 12-18 12-26 0z"
+            fill="none"
+            stroke="url(#inf)"
+            stroke-width="5"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span><b>Bpriox</b><small>Dream · Code · Love</small></span>
+      </a>
+      <p data-fa="بیا با هم چیزی شگفت‌انگیز بسازیم…">
+        Let’s create something amazing together…
+      </p>
+    </div>
+  </footer>
+
+  <dialog id="gift" aria-labelledby="gift-t">
+    <div class="gift">
+      <h3 id="gift-t" data-fa="برای عزیزترینم، LiLi">For my dearest LiLi</h3>
+      <p
+        data-fa="تو دنیای من را روشن‌تر می‌کنی. ممنون که اینجایی؛ تو این مسیر را معنادارتر می‌کنی."
+      >
+        You make my world brighter. Thank you for being here. You make this
+        journey more meaningful.
+      </p>
+      <button class="btn primary" id="giftClose" type="button">
+        <span data-fa="برای همیشه">Forever</span><i data-i="heart"></i>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Site scripts (order matters: utils.js first, animations.js last) -->
+  <script src="js/utils.js"></script>
+  <script src="js/svg.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/starfield.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/gift-dialog.js"></script>
+  <script src="js/active-nav.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

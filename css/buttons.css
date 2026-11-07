@@ -1,0 +1,40 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65em;
+  min-height: 48px;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  font: 600 0.92rem/1 var(--f-body);
+  border: 1px solid var(--line);
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
+}
+.btn.primary {
+  background: linear-gradient(120deg, #8b5cf6cc, #ec4899aa);
+  border-color: #c4b5fd88;
+  box-shadow: 0 0 28px #8b5cf655;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 34px #ec489944;
+  border-color: var(--pink);
+}
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+.btn .ico {
+  transition: transform 0.25s;
+}
+.btn:hover .ico {
+  transform: translateX(3px) rotate(0);
+}
+[dir="rtl"] .btn:hover .ico:not(.flip) {
+  transform: translateX(-3px);
+}

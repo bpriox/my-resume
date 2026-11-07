@@ -1,0 +1,43 @@
+/* Gift dialog */
+dialog {
+  border: 1px solid #c4b5fd88;
+  border-radius: 30px;
+  padding: 0;
+  max-width: min(92vw, 440px);
+  background: linear-gradient(160deg, #1d1438, #0e0820);
+  color: var(--white);
+  box-shadow:
+    0 40px 120px #000,
+    0 0 80px #ec489944;
+  overflow: visible;
+}
+dialog::backdrop {
+  background: #080611cc;
+  backdrop-filter: blur(6px);
+}
+.gift {
+  padding: 36px 28px 28px;
+  text-align: center;
+}
+.gift h3 {
+  font: 600 2rem/1.2 var(--f-script);
+  color: var(--pink-soft);
+  text-shadow: 0 0 18px var(--pink);
+  margin-bottom: 0.8rem;
+}
+html[lang="fa"] .gift h3 {
+  font-family: "Vazirmatn";
+  font-size: 1.5rem;
+}
+.gift p {
+  color: #d3cbee;
+  margin: 0 0 1.4rem;
+}
+.fly {
+  position: fixed;
+  pointer-events: none;
+  z-index: 200;
+  color: var(--pink);
+  width: 22px;
+  height: 22px;
+}

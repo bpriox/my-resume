@@ -1,0 +1,139 @@
+/* Layout concept: one continuous night sky. A cinematic hero (moon, couple on a rock, neon heart), then glass panels
+ floating over a fixed aurora. Desktop uses a top bar; phones use a bottom dock. Philosophy is oversized type that fills with light as you scroll. */
+:root {
+  --bg: #080611;
+  --bg2: #130d25;
+  --purple: #8b5cf6;
+  --blue: #38bdf8;
+  --pink: #ec4899;
+  --white: #f5f3ff;
+  --muted: #b9b1d6;
+  --line: #8b5cf638;
+  --glass: #130d25a6;
+  --glass-hi: #1d1438cc;
+  --pink-soft: #f9a8d4;
+  --f-display: "Unbounded", "Vazirmatn", system-ui, sans-serif;
+  --f-body: "Plus Jakarta Sans", "Vazirmatn", system-ui, sans-serif;
+  --f-script: "Dancing Script", "Vazirmatn", cursive;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  color-scheme: dark;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--bg);
+  color: var(--white);
+  font: 400 16px/1.65 var(--f-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+html[lang="fa"] body {
+  font-family: "Vazirmatn", var(--f-body);
+}
+html[lang="fa"]
+  :is(.eyebrow, .btn, .nav a, .dock a, .chip, .tag, h1, h2, h3, .big) {
+  letter-spacing: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.ico {
+  width: 1.2em;
+  height: 1.2em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+[dir="rtl"] .flip {
+  transform: scaleX(-1);
+}
+
+/* Ambient background */
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(120% 80% at 50% 0%, var(--bg2), var(--bg) 70%);
+}
+.ambient i {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.38;
+  will-change: transform;
+}
+.ambient i:nth-child(1) {
+  width: 46vw;
+  height: 46vw;
+  left: -12vw;
+  top: 8vh;
+  background: var(--purple);
+  animation: drift 24s ease-in-out infinite alternate;
+}
+.ambient i:nth-child(2) {
+  width: 38vw;
+  height: 38vw;
+  right: -10vw;
+  top: 38vh;
+  background: var(--pink);
+  opacity: 0.22;
+  animation: drift 30s ease-in-out infinite alternate-reverse;
+}
+.ambient i:nth-child(3) {
+  width: 34vw;
+  height: 34vw;
+  left: 30vw;
+  bottom: -14vh;
+  background: var(--blue);
+  opacity: 0.18;
+  animation: drift 36s ease-in-out infinite alternate;
+}
+@keyframes drift {
+  to {
+    transform: translate3d(6vw, -5vh, 0) scale(1.15);
+  }
+}

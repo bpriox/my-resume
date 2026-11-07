@@ -1,0 +1,91 @@
+/* Wrapper and type */
+.wrap {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-left: var(--gutter-l);
+  padding-right: var(--gutter-r);
+}
+section {
+  position: relative;
+  scroll-margin-top: 72px;
+}
+.eyebrow {
+  font: 600 0.74rem/1 var(--f-body);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--blue), transparent);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--f-display);
+  text-wrap: balance;
+  margin: 0;
+}
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4.6vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+html[lang="fa"] h2 {
+  line-height: 1.4;
+}
+.grad {
+  background: linear-gradient(
+    100deg,
+    var(--pink),
+    var(--purple) 55%,
+    var(--blue)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: shift 9s ease-in-out infinite alternate;
+}
+@keyframes shift {
+  to {
+    background-position: 100% 0;
+  }
+}
+.script {
+  font-family: var(--f-script);
+  color: var(--pink-soft);
+  text-shadow:
+    0 0 18px var(--pink),
+    0 0 2px var(--pink);
+}
+.lead {
+  color: var(--muted);
+  max-width: 46ch;
+  margin: 0.8rem 0 0;
+}
+.w {
+  display: inline-block;
+  white-space: pre;
+}
+.rule {
+  height: 1px;
+  max-width: 1240px;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--purple),
+    var(--pink),
+    var(--blue),
+    transparent
+  );
+  opacity: 0.5;
+  transform-origin: 50% 50%;
+}
